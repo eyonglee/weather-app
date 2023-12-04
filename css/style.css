@@ -5,6 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; 
     background: #a0d2eb;
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
     background-size: 100%;
@@ -36,6 +37,7 @@ button:hover {
 h1.temp {
     margin: 0;
     margin-bottom: 0.5em;
+    font-size: 2.5em;
 }
 
 .min-max {
@@ -47,15 +49,25 @@ h1.temp {
     margin: 10px;
 }
 
-.flex {
+.min-max > div.min {
+    margin-left: 0px;
+}
+
+.min, .max {
+    font-size: 90%;
+}
+
+.info {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .description {
+    font-size: 130%;
     text-transform: capitalize;
+    margin-bottom: 5px;
 }
 
-.weather.loading {
-    visibility:hidden;
+.humidity {
+    margin-bottom: 5px;
 }
