@@ -22,7 +22,7 @@ let weather = {
         document.querySelector(".max").innerText = "High: " + temp_max + "°F"
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speed: " + speed + "mph";
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/" + window.screen.width + "x" + window.screen.height + "/?" + name + "')";
         document.querySelector(".weather").classList.remove("loading");
     },
 
@@ -42,3 +42,5 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
 });
 
 weather.fetchWeather("Ann Arbor")
+
+console.log(window.screen.height)
